@@ -17,7 +17,7 @@
 }
 
 .sticky li.active.nav-sm-link {
-    color: white !important;
+    color: #EA4C89 !important;
 }
 
 li.active,
@@ -26,6 +26,17 @@ li.active,
     transition: 1s all ease-in;
     color: #EA4C89;
     font-weight: bold;
+}
+
+li.active.nav-sm-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #EA4C89;
 }
 
 li.active::after {
